@@ -2,7 +2,6 @@ package de.ostfalia.algo.aufgabe2;
 
 import java.util.Scanner;
 
-
 public class Aufgabe2 implements A2Interface {
 
 	/**
@@ -10,13 +9,14 @@ public class Aufgabe2 implements A2Interface {
 	 */
 
 	public static Aufgabe2 a2 = new Aufgabe2();
-int zaehler = 0;
+	int zaehler = 0;
 
 	public static void main(String[] args) {
-		
+
 		int ergebnis = 0;
 		Scanner scan = new Scanner(System.in);
-System.out.println("Wählen Sie die Art der Berechnung von n über k aus:");
+		System.out
+				.println("Wählen Sie die Art der Berechnung von n über k aus:");
 		System.out.println("1 für binomialkoeffizient_Fakultaet \n"
 				+ "2 für binomialkoeffizient_Iterativ \n"
 				+ "3 für binomialkoeffizient_Rekursiv \n"
@@ -74,7 +74,6 @@ System.out.println("Wählen Sie die Art der Berechnung von n über k aus:");
 
 		scan.close();
 	}
-	
 
 	@Override
 	public int binomialkoeffizient_Iterativ2(int n, int k) {
@@ -86,7 +85,7 @@ System.out.println("Wählen Sie die Art der Berechnung von n über k aus:");
 		int nenner = fakultaet(k);
 
 		for (int i = 1; i < k; i++) {
-getZaehler();
+			getZaehler();
 			zaehlerbruch = (anfang + i) * zaehlerbruch;
 		}
 		ergebnis = zaehlerbruch / nenner;
@@ -108,7 +107,7 @@ getZaehler();
 		int ergebnis = 1;
 		if (n != 0) {
 			for (int i = 1; i <= n; i++) {
-				
+
 				ergebnis = i * ergebnis;
 
 			}
