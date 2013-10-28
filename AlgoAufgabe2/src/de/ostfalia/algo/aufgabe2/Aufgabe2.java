@@ -12,7 +12,7 @@ public class Aufgabe2 implements A2Interface {
 	int zaehler = 0;
 
 	public static void main(String[] args) {
-
+		// TODO Fix Bug
 		int ergebnis = 0;
 		Scanner scan = new Scanner(System.in);
 		System.out
